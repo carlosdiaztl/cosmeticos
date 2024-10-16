@@ -24,5 +24,7 @@ async function checkAuth() {
         window.location.href = 'index.html';
     }
 }
-
-window.onload = checkAuth;
+document.addEventListener("DOMContentLoaded", function() {
+    // Tu código aquí
+    checkAuth();
+});
