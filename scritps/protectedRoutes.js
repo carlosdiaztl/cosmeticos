@@ -2,7 +2,7 @@ async function checkAuth() {
     const token = localStorage.getItem('token');
 
     if (!token) {
-        window.location.href = 'index.html';
+        window.location.href = 'login.html';
         return;
     }
 
@@ -16,12 +16,12 @@ async function checkAuth() {
 
         if (!response.ok) {
             localStorage.removeItem('token');
-            window.location.href = 'index.html';
+            window.location.href = 'login.html';
         }
     } catch (error) {
         console.error('Error al verificar el token:', error);
         localStorage.removeItem('token');
-        window.location.href = 'index.html';
+        window.location.href = 'login.html';
     }
 }
 document.addEventListener("DOMContentLoaded", function() {
