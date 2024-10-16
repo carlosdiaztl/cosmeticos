@@ -86,43 +86,34 @@ table td p{
     height: auto;
     font-size: 18px;
 }
-.ordencapa{
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    
+
+.capa {
+    position: relative; /* Posiciona el contenedor como relativo */
+    overflow: hidden; /* Esconde el texto que sobresalga */
 }
-.capa{
-    max-width: 100%;
-    max-height: 100%;
-    background-size: 100% 100%;
-    background-repeat:no-repeat;
-    border-radius: 10px;
-    transition: 1s;
-    margin: 0 auto;
-    margin-bottom: 10px;
-    padding: 30px ;
+
+.capa img {
+    width: 100%; /* Asegura que la imagen ocupe todo el contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+   height: 350px;
 }
-.capa:hover{
-    transition: 1s;
-    transition: all 0.6s ease;
-   
+
+.text {
+    position: absolute; /* Posiciona el texto de manera absoluta */
+    top: 50%; /* Centra verticalmente el texto */
+    left: 50%; /* Centra horizontalmente el texto */
+    transform: translate(-50%, -50%); /* Ajusta el texto para que esté centrado */
+    color: white; /* Cambia el color del texto a blanco */
+    text-align: center; /* Centra el texto */
+    opacity: 0; /* Oculta el texto por defecto */
+    transition: opacity 0.3s; /* Añade una transición suave */
 }
-.text{
-    text-align: center;
-    color: transparent;
-    cursor:pointer;
-    display:grid;
-    align-items: end;
-    margin: -20px;
-    font-size: 20px;
-}
-.text:hover{
-    color: white;
-    transition: 1s;
-    border-radius: 10px;
+
+.capa:hover .text {
+    opacity: 1; /* Muestra el texto al hacer hover */
     background-color: rgb(0, 0, 0,0.6);
-    position: relative;
 }
+
 .pie-pagina{
     background: rgba(57, 65, 73, 0.877);
 
