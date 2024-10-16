@@ -1,0 +1,150 @@
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Times New Roman', Times, serif;
+}
+  /* Estilo general para el cuerpo */
+  html, body {
+    height: 100%; /* Asegura que el body llene la ventana */
+    margin: 0; /* Elimina márgenes por defecto */
+    display: flex;
+    flex-direction: column; /* Disposición vertical */
+}
+.contenido {
+    flex: 1; /* Permite que el contenido principal ocupe el espacio restante */
+    padding: 20px; /* Espaciado interno */
+    background-color: #f8f9fa; /* Fondo claro */
+}
+.pie-pagina {
+    background-color: #343a40; /* Color de fondo del pie de página */
+    color: white; /* Color del texto */
+    text-align: center; /* Centra el texto */
+}
+.btn-wsp{
+    position:fixed;
+    width:50px;
+    bottom:50px;
+    right:25px;
+    z-index:999;
+ }
+ img{	max-width: 100%;  }
+
+ .bg-purple ,.dropdown-menu {
+    background-color: rgba(115, 113, 217, 0.788);
+    font-size: 18px;
+}
+.nav-link.dropdown-toggle::after {
+    display: none !important;
+  }
+  
+
+
+
+.icon{fill:#db479d;float: right;}
+
+
+.menu-horizontal > li > a{
+	display: block;
+	color: black;
+	text-decoration: none;
+}
+.menu-horizontal > li:hover{
+	background-color: rgba(26, 26, 26, 0.577);
+	border-radius: 20px;
+}
+.menu-horizontal > li a:hover{
+	color: rgb(245, 149, 230);
+}
+.menu-vertical{
+	display: none;
+	list-style: none;
+	background-color: rgba(109, 114, 204, 0.79);
+    margin-left: -30px;
+}
+.menu-horizontal li:hover .menu-vertical{
+    border-bottom: 2px solid rgb(63, 217, 238);  
+}
+.menu-vertical li:hover{
+	background-color: rgba(26, 26, 26, 0.577);
+	border-radius: 20px;
+}
+.menu-vertical li a{
+	display: block;
+	color: rgb(0, 0, 0);
+	text-decoration: none;
+	padding: 5px 5px 5px 0px;
+}
+table{
+    height: 80%;
+}
+table td p{
+    text-align: justify;
+    height: auto;
+    font-size: 18px;
+}
+.ordencapa{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    
+}
+.capa{
+    max-width: 100%;
+    max-height: 100%;
+    background-size: 100% 100%;
+    background-repeat:no-repeat;
+    border-radius: 10px;
+    transition: 1s;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    padding: 30px ;
+}
+.capa:hover{
+    transition: 1s;
+    transition: all 0.6s ease;
+   
+}
+.text{
+    text-align: center;
+    color: transparent;
+    cursor:pointer;
+    display:grid;
+    align-items: end;
+    margin: -20px;
+    font-size: 20px;
+}
+.text:hover{
+    color: white;
+    transition: 1s;
+    border-radius: 10px;
+    background-color: rgb(0, 0, 0,0.6);
+    position: relative;
+}
+.pie-pagina{
+    background: rgba(57, 65, 73, 0.877);
+
+}
+
+     
+.pie-pagina .grupo1 .box h2{
+        color:aqua;
+        margin-bottom: 25px;
+        font-size: 20px;
+      }
+.pie-pagina .grupo1 .box p{
+    color: white;
+}      
+.pie-pagina .grupo2{
+        background:rgba(14, 19, 24, 0.959);
+        height: 50px;
+        width: 100%;
+        text-align: center;
+        color: white;
+      }
+.pie-pagina .grupo2 small{font-size: 15px;}
+#header{
+    height: 30%;
+}
