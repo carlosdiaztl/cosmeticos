@@ -41,7 +41,13 @@ html{
     display: none !important;
   }
   
-
+  .navbar {
+    position: fixed; /* o absolute o sticky, dependiendo de tu diseño */
+    top: 0; /* Asegúrate de que esté en la parte superior */
+    left: 0; /* Asegúrate de que esté alineada a la izquierda */
+    right: 0; /* Asegúrate de que esté alineada a la derecha */
+    z-index: 1000; /* Un valor alto para que se superponga a otros elementos */
+}
 
 
 .icon{fill:#db479d;float: right;}
